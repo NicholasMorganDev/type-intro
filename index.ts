@@ -25,4 +25,39 @@ enum taxForm {
   cryptoTaxForm = '420Z',
 }
 
-console.log('The crypto one is:', taxForm.cryptoTaxForm)
+//console.log('The crypto one is:', taxForm.cryptoTaxForm)
+
+let zipCode: string | number = '12345'
+zipCode = 'ABCDE'
+//zipCode = true
+
+console.log(zipCode)
+
+function sum(x: number, y: number) {
+  return x+y
+}
+
+let total: number = sum(4,5)
+
+console.log(total)
+
+function debug(message: string) : void {
+  console.log(message)
+}
+
+debug("Hello World!")
+
+interface person {
+  firstName: string,
+  age: number,
+  children?: string[],
+  hasCertificate: boolean
+}
+
+let nick: person = {
+  firstName: 'me',
+  age: 20,
+  hasCertificate: true,
+}
+
+console.log(nick)
